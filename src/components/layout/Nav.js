@@ -5,7 +5,7 @@ const Nav = () => (
   <nav className="nav">
     <ul>
       <li>
-        <Link to="/">Recenty Watched</Link>
+        <Link to="/">Recently Watched</Link>
       </li>
       <li>
         <Link to="/wanttowatch">Want to Watch</Link>

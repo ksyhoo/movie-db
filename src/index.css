@@ -138,7 +138,6 @@ a:visited {
   grid-template-columns: 1fr 1fr 5fr 1fr;
   background: transparent;
   z-index: 0;
-  /* z-index: inherit; */
 }
 
 .grid-item {
@@ -146,7 +145,6 @@ a:visited {
   padding: 20px;
   font-size: 30px;
   text-align: left;
-  /* z-index: 2; */
   z-index: inherit;
 }
 
@@ -335,14 +333,6 @@ svg {
   z-index: inherit;
 }
 
-/* .left {
-  left: 20%;
-}
-
-.right {
-  left: 80%;
-} */
-
 .left:hover polyline,
 .left:focus polyline {
   stroke-width: 3;
@@ -424,19 +414,26 @@ polyline {
 
 @media (max-width: 1030px) {
   .container {
-    width: 500px;
+    width: auto;
   }
+  .nav {
+    width: auto;
+  }
+
+  .nav ul {
+    display: grid;
+  }
+
   .grid-container {
     grid-template-columns: none;
     margin: auto;
-    width: 400px;
+    width: auto;
     justify-items: center;
   }
   .grid-item {
     text-align: center;
   }
   .wrapper {
-    /* width: 100%; */
     padding-top: 25px;
     padding-bottom: 25px;
     display: table-cell;

@@ -23,21 +23,6 @@ const Carousel2 = props => {
         <div className="custom-bg" />
       </div>
 
-      {/* <div>
-        <button className="arrow right" onClick={props.testAction}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="60px" height="80px" viewBox="0 0 50 80">
-            <polyline
-              fill="none"
-              stroke="#FFFFFF"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              points="	0.375,0.375 45.63,38.087 0.375,75.8 "
-            />
-          </svg>
-        </button>
-      </div> */}
-
       <div className="wrapper">
         <div className="grid-container">
           <button className="arrow left " onClick={props.handleBackward}>
@@ -83,20 +68,6 @@ const Carousel2 = props => {
         </div>
       </div>
 
-      {/* <div>
-        <button className="arrow left" onClick={props.handleBackward}>
-          <svg width="60px" height="80px" viewBox="0 0 50 80">
-            <polyline
-              fill="none"
-              stroke="#FFFFFF"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              points="45.63,75.8 0.375,38.087 45.63,0.375 "
-            />
-          </svg>
-        </button>
-      </div> */}
       <div className="container-cast">
         <div className="wrapper-cast">
           <GetCrew getMovieDetails={props.movies.id} />

@@ -422,6 +422,10 @@ polyline {
 
   .nav ul {
     display: grid;
+    padding: 0;
+  }
+  .container {
+    display: none;
   }
 
   .grid-container {
@@ -432,11 +436,15 @@ polyline {
   }
   .grid-item {
     text-align: center;
+    height: auto;
   }
   .wrapper {
     padding-top: 25px;
     padding-bottom: 25px;
     display: table-cell;
+  }
+  .wrapper-search {
+    width: auto;
   }
   .actor-details {
     grid-template-columns: none;

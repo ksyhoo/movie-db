@@ -61,11 +61,27 @@ export default class SearchResults extends Component {
   render() {
     let moviesList;
     const { movies } = this.props;
+    const windowWidth = window.innerWidth;
+    let colAmmount;
+    // if(windowWidth<1030){
+    //   colAmmount=1
+    // }
+    // else {
+    //   colAmmount=4
+
+    // }
+
+    console.log(windowWidth);
 
     if (movies) {
+      if (windowWidth < 1030) {
+        colAmmount = 1;
+      } else {
+        colAmmount = 4;
+      }
       moviesList = (
         <div className="wrapper-search">
-          <GridList cols={4} style={{ height: "100%", backgroundColor: "#F4F4F4" }}>
+          <GridList cols={colAmmount} style={{ height: "100%", backgroundColor: "#F4F4F4" }}>
             {movies.map(movie => (
               <GridTile
                 title={movie.title}

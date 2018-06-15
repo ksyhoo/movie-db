@@ -16,6 +16,8 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "^1.1.1",
     "react-scroll-horizontal": "^1.4.0",
+    "react-swipeable": "^4.3.0",
+    "react-touch-events": "^2.1.0",
     "react-transition-group": "^2.2.1",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
